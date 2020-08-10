@@ -165,7 +165,7 @@ main .content {
 
 article {
     padding: 20px;
-    max-width: 680px;
+    /* max-width: 680px; */
     margin: auto;
     line-height: 1.5;
 }
@@ -191,6 +191,13 @@ article time {
     flex-shrink: 0;
     background: #111;
     font-size: small;
+    text-align: center;
+    padding: 3px;
+}
+
+#footer a {
+    color: #eee;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
