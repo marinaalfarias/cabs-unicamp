@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="application-name" content="{{ SITENAME }}">
+        <meta name="keywords" content="{{ SITEKEYWORDS }}">
+
+        <!-- Title -->
+        <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
+
+        <!-- Favicon -->
+        {% if FAVICON %}
+            <link rel="shortcut icon" href="{{ FAVICON }}" type="image/x-icon"/>
+            <link rel="icon" href="{{ FAVICON }}" type="image/x-icon"/>
+        {% endif %}
+
+        <!-- Custom CSS file -->
+        <link href="{{ SITEURL }}/theme/css/style.css" rel="stylesheet"/>
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        <header>
+            {% include 'includes/header.html'}
+        </header>
+        <nav></nav>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer></footer>
+    </body>
+</html>
