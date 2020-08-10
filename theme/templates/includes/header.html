@@ -1,5 +1,5 @@
 <header id="header" style="background-image: {% block BACKGROUND %}\url({{ BACKGROUND }}){% endblock %}">
-    <div id="main-menu">
+    <div id="main-menu" class="menu">
         <div id="logo">
             <img src="{{ LOGO }}">
         </div>
@@ -10,13 +10,19 @@
             <div></div> 
         </label>
             <ul class="menu">
-                {% for title, url in MAINMENU %}
-                <li{% if url[1:] == output_file %} class="active"{% endif %}>
-                    <a href="{{ SITEURL }}/{{ url }}">
-                        {{ title }}
-                    </a>
-                </li>
+                {% for title, link in MENUITEMS %}
+                    <li {% if p == page %} class="active"{% endif %}><a href="{{ link }}">{{ title }}</a></li>
                 {% endfor %}
+                {% if DISPLAY_PAGES_ON_MENU %}
+                  {% for p in PAGES %}
+                    <li {% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                  {% endfor %}
+                {% endif %}
+                  {% if DISPLAY_CATEGORIES_ON_MENU %}
+                    {% for cat, null in categories %}
+                      <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                    {% endfor %}
+                  {% endif %}
             </ul>
     </div>
     <div class="wrapper">

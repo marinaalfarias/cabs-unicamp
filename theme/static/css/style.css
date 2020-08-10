@@ -15,16 +15,36 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background-color: #FAFAFA;
+    font-family: 'roboto', arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'roboto', arial, sans-serif;
 }
 
+ul, ol {
+    list-style-position: inside;
+}
+
 .content {
     max-width: 960px;
     margin: auto;
 }
+
+blockquote {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+} 
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 /* #header */
 
@@ -123,6 +143,45 @@ h1, h2, h3, h4, h5, h6{
 
 .wrapper div {
     text-align: center;
+}
+
+/* Main */
+
+main {
+    display: flex;
+}
+
+#post-list {
+    list-style: none;
+}
+
+main nav {
+    flex: auto;
+}
+
+main .content {
+    flex: auto;
+}
+
+article {
+    padding: 20px;
+    max-width: 680px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+article .entry-title a,
+article .author a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+article footer {
+    margin-bottom: 0.8em;
+}
+
+article time {
+    color: #505050;
 }
 
 /* Footer */

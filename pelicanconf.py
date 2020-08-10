@@ -8,9 +8,9 @@ SITEURL = 'cabs-unicamp.gitlab.io'
 OUTPUT_PATH = 'public/'
 PATH = 'content'
 THEME = 'theme'
-LOGO = 'theme/images/logo.svg'
-
-BACKGROUND = 'theme/images/background.jpg'
+LOGO = '/theme/images/logo.svg'
+FAVICON = '/favicon.ico'
+BACKGROUND = '/theme/images/background.jpg'
 
 TIMEZONE = 'America/Sao_Paulo'
 LOCALE = 'pt_BR.utf8'
@@ -21,6 +21,7 @@ DEFAULT_DATE_FORMAT = '%d/%m/%Y'
 
 PAGE_PATHS = ['pages',]
 ARTICLE_PATHS = ['articles',]
+USE_FOLDER_AS_CATEGORY=True
 
 STATIC_PATHS = [
     'images',
@@ -44,11 +45,24 @@ MAINMENU = (('Inicio', ''),
          ('Contato', 'contato'),
          )
 
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+MENUITEMS = (('Inicio', '/'),
+         )
 
-DEFAULT_PAGINATION = 10
+DISPLAY_PAGES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
+
+ARTICLE_URL = 'blog/{slug}.html'
+ARTICLE_SAVE_AS = 'blog/{slug}.html'
+
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
+
+CATEGORY_URL = '{slug}.html'
+CATEGORY_SAVE_AS = '{slug}.html'
+
+DEFAULT_PAGINATION = 5
+DEFAULT_ORPHANS = 0
+
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
