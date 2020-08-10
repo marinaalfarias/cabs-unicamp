@@ -27,6 +27,7 @@ STATIC_PATHS = [
     'images',
     'extra',
 ]
+
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
@@ -39,17 +40,8 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-MAINMENU = (('Inicio', ''),
-         ('Sobre', 'sobre'),
-         ('Contato', 'contato'),
-         )
-
 MENUITEMS = (('Inicio', '/'),
          )
-
-DISPLAY_PAGES_ON_MENU = True
-DISPLAY_CATEGORIES_ON_MENU = False
 
 ARTICLE_URL = 'blog/{slug}.html'
 ARTICLE_SAVE_AS = 'blog/{slug}.html'
@@ -59,6 +51,9 @@ PAGE_SAVE_AS = '{slug}.html'
 
 CATEGORY_URL = '{slug}.html'
 CATEGORY_SAVE_AS = '{slug}.html'
+
+DISPLAY_PAGES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
 
 DEFAULT_PAGINATION = 5
 DEFAULT_ORPHANS = 0
