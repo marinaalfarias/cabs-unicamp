@@ -1,0 +1,27 @@
+<header id="header" style="background-image: {% block BACKGROUND %}\url({{ BACKGROUND }}){% endblock %}">
+    <div id="main-menu">
+        <div id="logo">
+            <img src="{{ LOGO }}">
+        </div>
+        <input type="checkbox" id="drop"/>
+        <label for="drop" class="toggle">
+            <div></div>
+            <div></div>
+            <div></div> 
+        </label>
+            <ul class="menu">
+                {% for title, url in MAINMENU %}
+                <li{% if url[1:] == output_file %} class="active"{% endif %}>
+                    <a href="{{ SITEURL }}/{{ url }}">
+                        {{ title }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+    </div>
+    <div class="wrapper">
+        <div>
+            <h1>{% block page_name %}{{ SITENAME }}{% endblock %}</h1>
+        </div>
+    </div>
+</header>

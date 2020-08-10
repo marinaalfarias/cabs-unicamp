@@ -21,13 +21,11 @@
         {% block head %}{% endblock %}
     </head>
     <body>
-        <header>
-            {% include 'includes/header.html'}
-        </header>
+        {% include 'includes/header.html' %}
         <nav></nav>
         <main>
             {% block content %}{% endblock %}
         </main>
-        <footer></footer>
+        {% include 'includes/footer.html' %}
     </body>
 </html>
