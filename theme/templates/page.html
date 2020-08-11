@@ -19,10 +19,11 @@
 
 {% endblock %}
 
+{% block page_name %}{{ page.title }}{% endblock %}
+
 {% block content %}
 <article id="content">
   <header>
-    <h2 class="entry-title">{{ page.title }}</h2>
  {% import 'translations.html' as translations with context %}
  {{ translations.translations_for(page) }}
   </header>
