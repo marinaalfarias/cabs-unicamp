@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Bernardo Sayão'
 SITENAME = 'Centro Acadêmico Bernardo Sayão'
 SITEURL = 'cabs-unicamp.gitlab.io'
+SITEDESCRIPTION = 'Página do CABS, centro acadêmico do curso de Engenharia Elétrica da Universidade Estadual de Campinas (Unicamp)'
 OUTPUT_PATH = 'public/'
 PATH = 'content'
 THEME = 'theme'
@@ -26,6 +27,7 @@ USE_FOLDER_AS_CATEGORY=True
 STATIC_PATHS = [
     'images',
     'extra',
+    'pv'
 ]
 
 EXTRA_PATH_METADATA = {

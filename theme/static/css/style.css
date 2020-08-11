@@ -74,17 +74,19 @@ p {
     min-height: 100%;
     background-size: cover;
     background-position: center;
+    color: #ddd;
 }
 
 
 #header h1 {
     font-size: 3rem;
     font-weight: bold;
-    color: #ddd;
-    margin-bottom: 5rem;  */
-    padding-bottom: 10px;
 }
 
+#header hr{
+    width: 100px;
+    height: 4px;
+}
 
 #logo {
     display: inline;
