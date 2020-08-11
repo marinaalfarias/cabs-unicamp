@@ -125,6 +125,10 @@ p {
     text-decoration: none;
 }
 
+#header ol, ul {
+    padding: 0px;
+}
+
 #header label {
     float: right;
     padding: 40px;
