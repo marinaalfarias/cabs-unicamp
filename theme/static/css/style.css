@@ -79,7 +79,7 @@ p {
 
 
 #header h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -93,7 +93,7 @@ p {
 }
 
 #logo img {
-    width: 100px;
+    width: 80px;
     padding: 2rem;
     filter: invert(60%);
 }
@@ -250,6 +250,11 @@ article time {
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    #header h1 {
+        font-size: 3rem;
+        font-weight: bold;
     }
 
     #header label {
