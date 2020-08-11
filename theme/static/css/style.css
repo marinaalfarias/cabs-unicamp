@@ -29,23 +29,46 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'roboto', arial, sans-serif;
 }
 
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+ hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+
 a,
 a:link {
-    color: var(--link-color);
+    color: var(--link-color, red);
 }
 
 a:hover,
 a:active {
-    color: var(--hover-color);
+    color: var(--hover-color, tomato);
 }
 
 a:visited {
-    color: var(--visited-color);
+    color: var(--visited-color, red);
 }
 
 ul, ol {
     list-style-position: inside;
+    padding-left: 40px;
 }
+
+ul {
+    list-style-type: square;
+}
+
 
 .content {
     max-width: 960px;
@@ -226,6 +249,10 @@ article .author a {
 
 article time {
     color: #505050;
+}
+
+.pv_elem img {
+    max-width: 200px;
 }
 
 /* Footer */

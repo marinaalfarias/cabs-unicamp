@@ -22,7 +22,7 @@
 {% block page_name %}{{ page.title }}{% endblock %}
 
 {% block content %}
-<article id="content">
+<article class="content">
   <header>
  {% import 'translations.html' as translations with context %}
  {{ translations.translations_for(page) }}
@@ -30,6 +30,7 @@
   <div class="entry-content">
     {{ page.content }}
   </div>
+  {% block extend_content %}{% endblock %}
 </article>
 {% endblock %}
 

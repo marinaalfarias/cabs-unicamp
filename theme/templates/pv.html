@@ -1,0 +1,11 @@
+{% extends 'page.html' %}
+
+{% block extend_content %}
+<h2>Edições publicadas</h2>
+
+{% for e in PV_LIST %}
+<span class="pv_elem">
+    <a href="{{ e[2] }}"><img src="{{ e[1] }}" title="{{ e[0] }}"></a>
+</span>
+{% endfor %}
+{% endblock %}
