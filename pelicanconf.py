@@ -40,7 +40,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-MENUITEMS = (('Inicio', '/'),
+MENUITEMS = (('blog', '/'),
          )
 
 ARTICLE_URL = 'blog/{slug}.html'
