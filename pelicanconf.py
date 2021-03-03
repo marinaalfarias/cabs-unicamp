@@ -46,8 +46,11 @@ STATIC_PATHS = [
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
-    'admin/index.html': {'path': 'admin/index.html'},
     'admin/config.yml': {'path': 'admin/config.yml'},
+}
+
+TEMPLATE_PAGES = {
+    'admin/index.html': {'path': 'admin/index.html'},
 }
 
 # Feed generation is usually not desired when developing
