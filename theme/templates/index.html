@@ -1,8 +1,25 @@
 {% extends 'base.html' %}
 
+    {% block head %}
+        <meta name="description" content="{{ SITEDESCRIPTION }}">
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <script>
+          if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+              if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                  document.location.href = "/admin/";
+                });
+              }
+            });
+          }
+        </script>
+    {% endblock %}
+
 {% block page_desc %}
     <p>{{ SITEDESCRIPTION }}</p>
 {% endblock %}
+
 
 {% block content %}
 <section class="content">
