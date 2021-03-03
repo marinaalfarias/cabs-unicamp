@@ -50,7 +50,7 @@ EXTRA_PATH_METADATA = {
 }
 
 TEMPLATE_PAGES = {
-    'admin/index.html': {'path': 'admin/index.html'},
+    'admin/index.html': 'admin/index.html',
 }
 
 # Feed generation is usually not desired when developing
