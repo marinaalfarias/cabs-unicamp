@@ -25,6 +25,7 @@ ARTICLE_PATHS = ['articles',]
 USE_FOLDER_AS_CATEGORY=True
 
 PV_LIST = [
+       ('Ingresso 2021', '/pv/ingresso_2021.png', '/pv/ingresso_2021.pdf'),
        ('Ingresso 2020', '/pv/ingresso_2020.png', '/pv/ingresso_2020.pdf'),
        ('Ingresso 2019', '/pv/ingresso_2019.png', '/pv/ingresso_2019.pdf'),
        ('6 Edicao 2018', '/pv/6aEdicao2018.png', '/pv/6aEdicao2018.pdf'),
