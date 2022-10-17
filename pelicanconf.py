@@ -41,6 +41,7 @@ PV_LIST = [
 STATIC_PATHS = [
     'images',
     'extra',
+    'pautas',
     'admin',
     'pv'
 ]
