@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Bernardo Sayão'
 SITENAME = 'Centro Acadêmico Bernardo Sayão'
-SITEURL = 'cabs-unicamp.gitlab.io'
+SITEURL = 'https://marinaalfarias.github.io/cabs-unicamp'
 SITEDESCRIPTION = 'Página do CABS, centro acadêmico do curso de Engenharia Elétrica da Universidade Estadual de Campinas (Unicamp)'
 OUTPUT_PATH = 'public/'
 PATH = 'content'
