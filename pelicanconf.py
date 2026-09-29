@@ -56,6 +56,14 @@ TEMPLATE_PAGES = {
     'admin/index.html': 'admin/index.html',
 }
 
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.tables': {},
+        'markdown.extensions.extra': {},
+    },
+    'output_format': 'html5',
+}
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
